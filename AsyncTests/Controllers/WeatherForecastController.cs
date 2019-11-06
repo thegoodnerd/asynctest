@@ -33,7 +33,7 @@ namespace AsyncTests.Controllers
             
             Console.WriteLine("");
             Console.WriteLine("REQUEST Thread: " + Thread.CurrentThread.ManagedThreadId);
-            _ws.GetWeatherForCities(Cities.CityNames);
+            _ws.GetWeatherForCitiesThrottled(Cities.CityNames);
 
             Console.WriteLine("REQUEST POST CITYNAMES Thread: " + Thread.CurrentThread.ManagedThreadId);
 
